@@ -18,11 +18,6 @@ void setDim(int dime){
   this->dim = dime;
 }
 
-//getter
-int* getArr() {
-  return arr;
-}
-
 
 //methods
 void allocate(){
@@ -38,35 +33,40 @@ void fillA(){
     }
 }
 
-void searchVal(int n , int pos){
-    for(int i = 0; i < dim; i++){
-        if(n == arr[i] && pos == i){
-            cout << "Numero: " << n << " trovato" << endl;
-            break;
+bool getVal(int pos, int &data){
+        if (pos >= 0 && pos < dim) {
+            data = arr[pos];
+            return true;
         } else {
             cout << "Numero non trovato" << endl;
+            return false;
         }
-    }
 }
 
-void setVal(int val , int pos){
-     for(int i = 0; i < dim; i++){
-        if(pos == i && val != arr[i]){
-            arr[i] = val;
+bool setVal(int val , int pos){
+        if(pos >= 0 && pos < dim){
+            arr[pos] = val;
             cout << "Numero: " << val << " impostato" << endl;
-            break;
+            return true;
         } else {
             cout << "Numero non settato" << endl;
+            return false;
         }
-    }
 }
 
-int lenghtA(){
-    int lenght = 0;
+
+
+
+int len(){
+    int len = 0;
     for(int i = 0; i < dim; i++){
-            lenght++;
+            len++;
     }
-    return lenght;
+    return len;
+}
+
+int* pointer() {
+  return arr;
 }
 
 void print(){
@@ -79,7 +79,7 @@ void print(){
         delete[] arr;
     }
 
-};
 
+};
 
 #endif // PROVA_H_INCLUDED

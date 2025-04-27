@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1745772213 source:c:\users\mario\desktop\codeblocks project\classe_prova_costruttori_distruttori_eser10.2\main.cpp
+	<iostream>
+	"prova.h"
+
+1745772408 c:\users\mario\desktop\codeblocks project\classe_prova_costruttori_distruttori_eser10.2\prova.h
+	<iostream>
+
