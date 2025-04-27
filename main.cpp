@@ -22,7 +22,6 @@ int posC, posS;
     prov1.fillA();
     cout << "|============================================================|" << endl;
 
-
     cout << "Inserire un valore da cercare nell'array: " << endl;
     cin >> valC;
 
@@ -31,7 +30,6 @@ int posC, posS;
 
     prov1.searchVal(valC , posC);
     cout << "|============================================================|" << endl;
-
 
     cout << "Inserire un valore da settare nell'array: " << endl;
     cin >> valS;
@@ -47,7 +45,6 @@ int posC, posS;
 
     prov1.print();
     cout << "|============================================================|" << endl;
-
 
     return 0;
 }
